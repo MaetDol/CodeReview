@@ -1,18 +1,19 @@
 # 코드리뷰
 
 코드리뷰를 요청하는 공간입니다. <br/>
-프로젝트 주제는 자유롭게 올려주시고, 흥미있는 주제가 있으시면 언제든 새 프로젝트를 시작해주세요 :D <br/><br/>
+프로젝트 주제는 자유롭게 올려주시고, 흥미있는 주제가 있으시면 언제든 새 프로젝트를 시작해주세요 :D
+<br/><br/>
 
 ### 프로젝트 생성 규칙
 
 - 카멜케이스(camelCase)로 작성
 - 사용하는 기술은 `Vanilla JS`, `React JS`, `TypeScript`로 제한합니다.
-- 디렉토리 구조 : 디렉토리명은 프로젝트 주제 (ex. toDoList), 본인 프로젝트는 이름으로 업로드 (ex. toDoList/suKyoung)
+- 디렉토리 구조 : 디렉토리명은 프로젝트 주제 및 기술명 (ex. `toDoList_js`), 본인 프로젝트는 이름으로 업로드 (ex. `toDoList_js/suKyoung`)
 
 ### 디렉토리 구조
 
 ```
-bulletinBoard (프로젝트명)
+bulletinBoard_js (프로젝트명_사용기술)
 ├ sukyoung (리뷰요청자 이름)
 ├ maetdol
 ├ ...
