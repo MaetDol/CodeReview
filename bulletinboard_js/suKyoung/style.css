@@ -1,0 +1,45 @@
+/* CSS reset */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+/* STYLE */
+form {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+div {
+  padding: 8px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 180px;
+  height: fit-content;
+  overflow: auto;
+
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform: translate(-50%, -50%);
+
+  border-radius: 8px;
+}
+span {
+  width: 100%;
+  color: snow;
+}
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
