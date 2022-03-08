@@ -37,7 +37,7 @@ function deleteBoard() {
 };
 
 function paintBackgroundColor() {
-  const backgroundColorsArray = [
+  const backgroundColors = [
     'lightcoral', 
     'lightpink', 
     'lightblue', 
@@ -47,9 +47,9 @@ function paintBackgroundColor() {
     'lightsteelblue',
     'lightslategrey',
   ];
-  const backgroundColorIndex = backgroundColorsArray.length;
+  const backgroundColorIndex = backgroundColors.length;
   const randomNum = Math.floor(Math.random()*backgroundColorIndex);
-  return backgroundColorsArray[randomNum];
+  return backgroundColors[randomNum];
 };
 
 function dragBoard(e) {
