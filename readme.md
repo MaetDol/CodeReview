@@ -30,9 +30,12 @@ bulletinBoard_js (프로젝트명_사용기술)
 ### 리뷰요청 규칙
 - PR 리뷰 요청 시, 모든 사람을 reviewer로 등록 -> Merge (최소 1 Approve)
 - 프로젝트는 삭제하지 않고 남기도록 한다.
-- 🚫 '포스푸쉬 금지'
+- 🚫 **포스푸쉬 절.대. 금지**
 
 ### 컨벤션
 - 커밋 컨벤션 없음
 - 코드 리뷰 시, `최대한 논리적인 이유`를 덧붙인 코드리뷰 부탁드립니다.
 - [코드리뷰의 목적은 성장이어야 한다.](https://jbee.io/essay/code-review-goal/)
+
+### 프로젝트 정보 바로가기
+- [bulletinBoard_js](https://awesome-tomato.github.io/CodeReview/bulletinboard_js/)
