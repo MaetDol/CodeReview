@@ -9,20 +9,24 @@ function init() {
 
 function createNewBoard(e) {
   e.preventDefault();
-  const toDoLists = document.querySelector('input');
+  const randomId = new Date().getMilliseconds();
   const board = document.createElement('div');
   board.setAttribute('draggable', 'true');
   board.addEventListener('dragstart', dragBoard);
+  board.setAttribute('id', randomId);
   board.style.backgroundColor = paintBackgroundColor();
-
+  
+  const toDoLists = document.querySelector('input');
   const span = document.createElement('span');
-  span.innerText = toDoLists.value;
+  span.setAttribute('draggable', 'false');
+  span.innerText = toDoLists.value || '메모없음';
   toDoLists.value = '';
 
   const closeButton = document.createElement('button');
   closeButton.innerText ='X';
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('class', 'close');
+  closeButton.setAttribute('draggable', 'false');
   closeButton.addEventListener('click', deleteBoard);
 
   board.appendChild(span);
@@ -53,10 +57,15 @@ function paintBackgroundColor() {
 };
 
 function dragBoard(e) {
+  let target = e.target;
+  if (e.target.id === '' && e.target.parentElement.tagName === 'DIV') {
+    e.stopPropagation();
+    target = e.target.parentElement;
+  }
   const posX = e.clientX;
   const posY = e.clientY;
-  e.target.style.left = posX + 'px';
-  e.target.style.top = posY + 'px';
+  target.style.left = posX + 'px';
+  target.style.top = posY + 'px';
 };
 
 function dropBoard(e) {
