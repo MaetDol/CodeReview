@@ -624,7 +624,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/index.js\");\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/rest-deps.js\");\n\n\nconst worker = (0,msw__WEBPACK_IMPORTED_MODULE_0__.setupWorker)(\n\tmsw__WEBPACK_IMPORTED_MODULE_1__.r.get('/test', (req, res, ctx) => {\n\t\treturn res(ctx.json({ hello: 'word' }));\n\t})\n);\n\nworker.start();\n\n//# sourceURL=webpack://msw/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/index.js\");\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/rest-deps.js\");\n\r\n\r\nconst worker = (0,msw__WEBPACK_IMPORTED_MODULE_0__.setupWorker)(\r\n\tmsw__WEBPACK_IMPORTED_MODULE_1__.r.get('/test', (req, res, ctx) => {\r\n\t\treturn res(ctx.json({ hello: 'word' }));\r\n\t})\r\n);\r\n\r\nworker.start({\r\n\tserviceWorker: {\r\n\t\turl: \"/countrySearch_js/msw/mockServiceWorker.js\"\r\n\t}\r\n});\n\n//# sourceURL=webpack://msw/./src/index.js?");
 
 /***/ })
 

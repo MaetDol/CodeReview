@@ -6,4 +6,8 @@ const worker = setupWorker(
 	})
 );
 
-worker.start();
+worker.start({
+	serviceWorker: {
+		url: "/countrySearch_js/msw/mockServiceWorker.js"
+	}
+});
