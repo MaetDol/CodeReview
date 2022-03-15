@@ -9,11 +9,11 @@ function init() {
 
 function createNewBoard(e) {
   e.preventDefault();
-  const randomId = new Date().getMilliseconds();
+  const ramdomData = new Date().getMilliseconds();
   const board = document.createElement('div');
   board.setAttribute('draggable', 'true');
+  board.setAttribute('data-id', ramdomData);
   board.addEventListener('dragstart', dragBoard);
-  board.setAttribute('id', randomId);
   board.style.backgroundColor = paintBackgroundColor();
   
   const toDoLists = document.querySelector('input');
@@ -57,15 +57,17 @@ function paintBackgroundColor() {
 };
 
 function dragBoard(e) {
-  let target = e.target;
-  if (e.target.id === '' && e.target.parentElement.tagName === 'DIV') {
+  let currTarget = e.target;
+  const targetParent = currTarget.parentElement;
+  const isChildOfBoardElement = currTarget.dataset.id === '' && targetParent.tagName === 'DIV';
+  if (isChildOfBoardElement) {
     e.stopPropagation();
-    target = e.target.parentElement;
+    currTarget = targetParent;
   }
   const posX = e.clientX;
   const posY = e.clientY;
-  target.style.left = posX + 'px';
-  target.style.top = posY + 'px';
+  currTarget.style.left = posX + 'px';
+  currTarget.style.top = posY + 'px';
 };
 
 function dropBoard(e) {
