@@ -1,6 +1,12 @@
 const TerserPlugin = require('terser-webpack-plugin');
+const path = require('path');
 
-module.expores = {
+module.exports = {
+
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: 'msw.js',
+	},
 
 	// Omit License file
 	optimization: {
