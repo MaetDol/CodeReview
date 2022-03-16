@@ -1,9 +1,10 @@
 import { setupWorker, rest } from 'msw';
+import handlers from './api.js';
 
-const worker = setupWorker(
-	rest.get('/test', (req, res, ctx) => {
-		return res(ctx.json({ hello: 'word' }));
-	})
-);
+const worker = setupWorker(...handlers);
 
-worker.start();
+worker.start({
+	serviceWorker: {
+		url: "/countrySearch_js/msw/mockServiceWorker.js"
+	}
+});
