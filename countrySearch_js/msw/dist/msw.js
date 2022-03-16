@@ -617,6 +617,39 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
+/***/ "./src/api.js":
+/*!********************!*\
+  !*** ./src/api.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/rest-deps.js\");\n/* harmony import */ var _db__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./db */ \"./src/db.js\");\n\n\n\nfunction url(path) {\n\treturn '/api' + path;\n}\n\nconst searchCountry = msw__WEBPACK_IMPORTED_MODULE_1__.r.get(url`/search`, (req, res, ctx) => {\n\tconst keyword = req\n\t\t.url.searchParams.get('keyword')\n\t\t.toString()\n\t\t.trim();\n\tif(!keyword.length) return res(ctx.json([]));\n\n\treturn _db__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getAllCountry()\n\t\t.filter(country => country.includes(keyword));\n});\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\n\tsearchCountry,\n]);\n\n//# sourceURL=webpack://msw/./src/api.js?");
+
+/***/ }),
+
+/***/ "./src/datas.js":
+/*!**********************!*\
+  !*** ./src/datas.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\n    \"Afghanistan\",\n    \"Albania\",\n    \"Algeria\",\n    \"Andorra\",\n    \"Angola\",\n    \"Antigua and Barbuda\",\n    \"Argentina\",\n    \"Armenia\",\n    \"Australia\",\n    \"Austria\",\n    \"Azerbaijan\",\n    \"Bahamas\",\n    \"Bahrain\",\n    \"Bangladesh\",\n    \"Barbados\",\n    \"Belarus\",\n    \"Belgium\",\n    \"Belize\",\n    \"Benin\",\n    \"Bhutan\",\n    \"Bolivia\",\n    \"Bosnia and Herzegovina\",\n    \"Botswana\",\n    \"Brazil\",\n    \"Brunei \",\n    \"Bulgaria\",\n    \"Burkina Faso\",\n    \"Burundi\",\n    \"Côte d'Ivoire\",\n    \"Cabo Verde\",\n    \"Cambodia\",\n    \"Cameroon\",\n    \"Canada\",\n    \"Central African Republic\",\n    \"Chad\",\n    \"Chile\",\n    \"China\",\n    \"Colombia\",\n    \"Comoros\",\n    \"Congo (Congo-Brazzaville)\",\n    \"Costa Rica\",\n    \"Croatia\",\n    \"Cuba\",\n    \"Cyprus\",\n    \"Czechia (Czech Republic)\",\n    \"Democratic Republic of the Congo\",\n    \"Denmark\",\n    \"Djibouti\",\n    \"Dominica\",\n    \"Dominican Republic\",\n    \"Ecuador\",\n    \"Egypt\",\n    \"El Salvador\",\n    \"Equatorial Guinea\",\n    \"Eritrea\",\n    \"Estonia\",\n    \"Eswatini (fmr. \\\"Swaziland\\\")\",\n    \"Ethiopia\",\n    \"Fiji\",\n    \"Finland\",\n    \"France\",\n    \"Gabon\",\n    \"Gambia\",\n    \"Georgia\",\n    \"Germany\",\n    \"Ghana\",\n    \"Greece\",\n    \"Grenada\",\n    \"Guatemala\",\n    \"Guinea\",\n    \"Guinea-Bissau\",\n    \"Guyana\",\n    \"Haiti\",\n    \"Holy See\",\n    \"Honduras\",\n    \"Hungary\",\n    \"Iceland\",\n    \"India\",\n    \"Indonesia\",\n    \"Iran\",\n    \"Iraq\",\n    \"Ireland\",\n    \"Israel\",\n    \"Italy\",\n    \"Jamaica\",\n    \"Japan\",\n    \"Jordan\",\n    \"Kazakhstan\",\n    \"Kenya\",\n    \"Kiribati\",\n    \"Kuwait\",\n    \"Kyrgyzstan\",\n    \"Laos\",\n    \"Latvia\",\n    \"Lebanon\",\n    \"Lesotho\",\n    \"Liberia\",\n    \"Libya\",\n    \"Liechtenstein\",\n    \"Lithuania\",\n    \"Luxembourg\",\n    \"Madagascar\",\n    \"Malawi\",\n    \"Malaysia\",\n    \"Maldives\",\n    \"Mali\",\n    \"Malta\",\n    \"Marshall Islands\",\n    \"Mauritania\",\n    \"Mauritius\",\n    \"Mexico\",\n    \"Micronesia\",\n    \"Moldova\",\n    \"Monaco\",\n    \"Mongolia\",\n    \"Montenegro\",\n    \"Morocco\",\n    \"Mozambique\",\n    \"Myanmar (formerly Burma)\",\n    \"Namibia\",\n    \"Nauru\",\n    \"Nepal\",\n    \"Netherlands\",\n    \"New Zealand\",\n    \"Nicaragua\",\n    \"Niger\",\n    \"Nigeria\",\n    \"North Korea\",\n    \"North Macedonia\",\n    \"Norway\",\n    \"Oman\",\n    \"Pakistan\",\n    \"Palau\",\n    \"Palestine State\",\n    \"Panama\",\n    \"Papua New Guinea\",\n    \"Paraguay\",\n    \"Peru\",\n    \"Philippines\",\n    \"Poland\",\n    \"Portugal\",\n    \"Qatar\",\n    \"Romania\",\n    \"Russia\",\n    \"Rwanda\",\n    \"Saint Kitts and Nevis\",\n    \"Saint Lucia\",\n    \"Saint Vincent and the Grenadines\",\n    \"Samoa\",\n    \"San Marino\",\n    \"Sao Tome and Principe\",\n    \"Saudi Arabia\",\n    \"Senegal\",\n    \"Serbia\",\n    \"Seychelles\",\n    \"Sierra Leone\",\n    \"Singapore\",\n    \"Slovakia\",\n    \"Slovenia\",\n    \"Solomon Islands\",\n    \"Somalia\",\n    \"South Africa\",\n    \"South Korea\",\n    \"South Sudan\",\n    \"Spain\",\n    \"Sri Lanka\",\n    \"Sudan\",\n    \"Suriname\",\n    \"Sweden\",\n    \"Switzerland\",\n    \"Syria\",\n    \"Tajikistan\",\n    \"Tanzania\",\n    \"Thailand\",\n    \"Timor-Leste\",\n    \"Togo\",\n    \"Tonga\",\n    \"Trinidad and Tobago\",\n    \"Tunisia\",\n    \"Turkey\",\n    \"Turkmenistan\",\n    \"Tuvalu\",\n    \"Uganda\",\n    \"Ukraine\",\n    \"United Arab Emirates\",\n    \"United Kingdom\",\n    \"United States of America\",\n    \"Uruguay\",\n    \"Uzbekistan\",\n    \"Vanuatu\",\n    \"Venezuela\",\n    \"Vietnam\",\n    \"Yemen\",\n    \"Zambia\",\n    \"Zimbabwe\"\n]);\n\n//# sourceURL=webpack://msw/./src/datas.js?");
+
+/***/ }),
+
+/***/ "./src/db.js":
+/*!*******************!*\
+  !*** ./src/db.js ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _datas__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./datas */ \"./src/datas.js\");\n\n\nclass Db {\n\tconstructor() {\n\t\tthis.datas = _datas__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\t}\n\n\tgetAllCountry() {\n\t\treturn this.datas;\n\t}\n}\n\nconst db = new Db();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (db);\n\n//# sourceURL=webpack://msw/./src/db.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -624,7 +657,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/index.js\");\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/rest-deps.js\");\n\r\n\r\nconst worker = (0,msw__WEBPACK_IMPORTED_MODULE_0__.setupWorker)(\r\n\tmsw__WEBPACK_IMPORTED_MODULE_1__.r.get('/test', (req, res, ctx) => {\r\n\t\treturn res(ctx.json({ hello: 'word' }));\r\n\t})\r\n);\r\n\r\nworker.start({\r\n\tserviceWorker: {\r\n\t\turl: \"/countrySearch_js/msw/mockServiceWorker.js\"\r\n\t}\r\n});\n\n//# sourceURL=webpack://msw/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var msw__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! msw */ \"./node_modules/msw/lib/esm/index.js\");\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.js */ \"./src/api.js\");\n\r\n\r\n\r\nconst worker = (0,msw__WEBPACK_IMPORTED_MODULE_1__.setupWorker)(..._api_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\n\r\nworker.start({\r\n\tserviceWorker: {\r\n\t\turl: \"/countrySearch_js/msw/mockServiceWorker.js\"\r\n\t}\r\n});\n\n//# sourceURL=webpack://msw/./src/index.js?");
 
 /***/ })
 

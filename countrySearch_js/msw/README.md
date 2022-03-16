@@ -1,7 +1,41 @@
 # countrySearch_js 프로젝트 모킹을 위한 폴더입니다
-목업 역할을 해주는 MSW를 적용하시려면, `dist/msw.js` 를 본인의 폴더로 가져와 `<script src="msw.js">`의 형태로 로드해주시면 됩니다.
-
+목업 역할을 해주는 MSW를 적용하시려면, `countrySearch_js/msw.js` 파일을 스크립트 태그로 불러와주시면 됩니다.
+```javascript
+<script src="../msw.js"></script>
+```
 
 ## API 응답 문서
-아직 주소나 어떤 응답이 나올지 명세가 정해지지 않았습니다.
-정해지고, 구현이 되고난 다음 여기에 정의될 예정입니다
+### GET : `/api/search`
+
+#### Params
+- keyword : `string`
+
+#### Response
+# countrySearch_js 프로젝트 모킹을 위한 폴더입니다
+목업 역할을 해주는 MSW를 적용하시려면, `countrySearch_js/msw.js` 파일을 스크립트 태그로 불러와주시면 됩니다.
+```javascript
+<script src="../msw.js"></script>
+```
+
+## API 응답 문서
+### GET : `/api/search`
+#### 요청
+- keyword(옵셔널) : `string`
+
+#### 응답
+```javascript
+[
+  'string',
+  'string2',
+  // ...
+]
+```
+
+#### 사용 예시
+```bash
+# 요청
+GET /api/search?keyword=kor
+
+# 응답
+["South Korea", "North Korea"]
+```
