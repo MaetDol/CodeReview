@@ -19,3 +19,8 @@
 ### 참고자료
 
 - Undefined
+
+### 서버 연결하기
+서버를 직접 구동시키기엔 비용 및 유지문제가 있어, <br/>
+MSW를 이용해 실제 API를 주고 받듯이 사용할 수 있게 했습니다. <br/>
+관련 문서는 [해당 링크](https://github.com/Awesome-Tomato/CodeReview/blob/main/countrySearch_js/msw/README.md) 를 이용해주세요.
