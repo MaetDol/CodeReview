@@ -6,19 +6,6 @@
 
 ## API 응답 문서
 ### GET : `/api/search`
-
-#### Params
-- keyword : `string`
-
-#### Response
-# countrySearch_js 프로젝트 모킹을 위한 폴더입니다
-목업 역할을 해주는 MSW를 적용하시려면, `countrySearch_js/msw.js` 파일을 스크립트 태그로 불러와주시면 됩니다.
-```javascript
-<script src="../msw.js"></script>
-```
-
-## API 응답 문서
-### GET : `/api/search`
 #### 요청
 - keyword(옵셔널) : `string`
 
