@@ -1,7 +1,8 @@
 name: Github actions demo
 on: 
   pull_request:
-    types: close
+    types: 
+      - close
 jobs:
   Demo-Action:
     runs-on: ubuntu-latest
