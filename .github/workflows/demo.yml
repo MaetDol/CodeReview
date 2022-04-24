@@ -7,6 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Yay!"
-      - name: Do something..
-        run: echo "${{ github.event.pull_request.labels.*.name }}"
-        run: echo "${{ github.event.pull_request.head.ref }}"
+      - run: echo "${{ github.event.pull_request.labels.*.name }}"
+      - run: echo "${{ github.event.pull_request.head.ref }}"
