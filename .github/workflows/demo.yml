@@ -1,0 +1,8 @@
+name: Github actions demo
+jobs:
+  Demo-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Yay!"
+      - name: Do something..
+        run: echo "working..."
