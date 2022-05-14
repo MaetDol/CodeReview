@@ -2,7 +2,9 @@
 
 바닐라 자바스크립트로 구현한 Bulletin Board 프로젝트입니다. <br/> <br/>
 
+
 ## 배포링크
+
 - [Maetdol](https://awesome-tomato.github.io/CodeReview/bulletinboard_js/maetdol/index.html)
 - [SuKyoung](https://awesome-tomato.github.io/CodeReview/bulletinboard_js/suKyoung/index.html)
 
@@ -22,4 +24,5 @@
 
 
 #### 참고자료
+
 - [Let's Build a Simple Bulletin Board React App](https://lo-victoria.com/lets-build-a-simple-bulletin-board-react-app)
