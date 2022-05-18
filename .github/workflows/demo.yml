@@ -4,4 +4,4 @@ on:
     branches: [main]
 jobs:
   Demo-Action:
-    uses: maetdol/codereview-github-action-test/build-all-sub-directory@v1
+    uses: MaetDol/CodeReview-github-action-test/build-all-sub-directory@v1
