@@ -1,11 +1,7 @@
 name: Github actions demo
 on:
   push:
-    branchs: [main]
+    branches: [main]
 jobs:
   Demo-Action:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Yay!"
-      - run: echo "${{ github.event.pull_request.labels.*.name }}"
-      - run: echo "${{ github.event.pull_request.head.ref }}"
+    uses: maetdol/codereview-github-action-test/build-all-sub-directory@v1
