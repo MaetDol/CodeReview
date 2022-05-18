@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 0
         
-      - uses: MaetDol/CodeReview-github-action-test/build-all-sub-directory@v1
+      - uses: Awesome-Tomato/build-all-sub-directory@v1
       
       - name: Git configuring
         run: |
