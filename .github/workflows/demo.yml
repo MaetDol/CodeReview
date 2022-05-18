@@ -13,7 +13,7 @@ jobs:
       - uses: MaetDol/CodeReview-github-action-test/build-all-sub-directory@v1
       
       - name: Git configuring
-      - run: |
+        run: |
           git config user.name 'MaetDol'
           git config user.email 'rndka9@gmail.com'
           
