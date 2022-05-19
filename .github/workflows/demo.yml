@@ -10,17 +10,5 @@ jobs:
         with:
           fetch-depth: 0
         
-      - uses: Awesome-Tomato/build-all-sub-directory@v1
+      - uses: Awesome-Tomato/build-all-sub-directory/get-build-target-fullpaths@v1
       
-      - name: Git configuring
-        run: |
-          git config user.name 'MaetDol'
-          git config user.email 'rndka9@gmail.com'
-          
-      - name: Deploy
-        run: |
-          git add --all
-          git commit -m 'Deploy build output by Github workflow'
-          git checkout gh-pages
-          git merge main
-          git push origin gh-pages
