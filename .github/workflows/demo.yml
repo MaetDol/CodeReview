@@ -12,4 +12,4 @@ jobs:
         
       - uses: Awesome-Tomato/build-all-sub-directory/get-build-target-fullpaths@v1
         with:
-          workspace: ${{ GIHUB_WORKSPACE }}
+          workspace: ${{ env.GIHUB_WORKSPACE }}
