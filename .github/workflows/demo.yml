@@ -29,4 +29,18 @@ jobs:
         with:
           fullpaths: ${{ steps.projectPaths.outputs.projectPaths }}
           projectBaseUrl: 'https://awesome-tomato.github.io/CodeReview'
+      
+      - name: Git configuring
+        run: |
+          git config user.name 'MaetDol'
+          git config user.email 'rndka9@gmail.com'
+      
+      - name: Deploy
+        run: |
+          git add --all
+          git commit -m 'Deploy build output by Github workflow'
+          git checkout gh-pages
+          git merge main --strategy-option theirs
+          git push origin gh-pages
+          
           
