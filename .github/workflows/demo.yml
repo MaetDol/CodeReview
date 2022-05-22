@@ -19,4 +19,4 @@ jobs:
 
       - uses: Awesome-Tomato/build-all-sub-directory/build-by-path@v1
         with:
-          paths: ${{ steps.projectPaths.outputs.projectPaths }}
+          fullpaths: ${{ steps.projectPaths.outputs.projectPaths }}
