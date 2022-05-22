@@ -5,10 +5,6 @@
 
 ## 배포링크
 
-- [Maetdol](https://awesome-tomato.github.io/CodeReview/bulletinboard_js/maetdol/index.html)
-- [SuKyoung](https://awesome-tomato.github.io/CodeReview/bulletinboard_js/suKyoung/index.html)
-
-
 ## 프로젝트 기능
 
 - input text에 글씨를 입력하면, 입력받은 글씨를 포함한 네모박스가 생성된다.
