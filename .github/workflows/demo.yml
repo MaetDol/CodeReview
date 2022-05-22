@@ -9,10 +9,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-        
+
       - uses: Awesome-Tomato/build-all-sub-directory/get-build-target-fullpaths@v1
         id: projectPaths
         with:
           workspace: ${{ github.workspace }}
-  
+
       - run: echo "${{ steps.projectPaths.outputs.projectPaths }}"
+
+      - uses: Awesome-Tomato/build-all-sub-directory/build-by-path@v1
+        with:
+          paths: ${{ steps.projectPaths.outputs.projectPaths }}
