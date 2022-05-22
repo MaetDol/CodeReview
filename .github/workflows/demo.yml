@@ -20,3 +20,13 @@ jobs:
       - uses: Awesome-Tomato/build-all-sub-directory/build-by-path@v1
         with:
           fullpaths: ${{ steps.projectPaths.outputs.projectPaths }}
+      
+      - uses: Awesome-Tomato/build-all-sub-directory/move-build-output-to-parent-directory@v1
+        with:
+          fullpaths: ${{ steps.projectPaths.outputs.projectPaths }}
+      
+      - uses: Awesome-Tomato/build-all-sub-directory/add-deploy-path-to-readme-based-on-path@v1
+        with:
+          fullpaths: ${{ steps.projectPaths.outputs.projectPaths }}
+          projectBaseUrl: 'https://awesome-tomato.github.io/CodeReview'
+          
